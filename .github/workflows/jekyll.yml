@@ -1,0 +1,599 @@
+<head >
+            <meta charset="utf-8" />
+</head>
+
+<body>   
+
+    
+
+<table width="95%" style="margin-left:auto;margin-right:auto; background-color:#EDEDED;  border-top-left-radius: 20px; border-top-right-radius: 20px;">
+        <tr>    
+                
+            <td width="40%" style="margin-left:auto;margin-right:auto;">
+                <div style="background-color:#6C1B2D; margin-left:auto;margin-right:auto; border-top-right-radius: 20px; border-bottom-left-radius: 20px;">
+                <DIV style="font-size:25px; Arial Narrow; color: #ffbb5f; bold;" align="center">"Tu es un sorcier <br><!-- NOM -->
+                    
+                        <INPUT type="text" name="attr_character_name" align="right" title="Nom et prénom de votre personnage" placeholder="Prénom et nom" style="width:200px; font-family: Arial Narrow; font-size:25px; color: #ffbb5f; bold; border:0px; background-color:#6C1B2D; align: right;">
+                        </INPUT>"<br></DIV>
+                        <div style="color:#D6D6D6;" align="center">- Hagrid</div>
+                        </div>
+                    <!-- FIN NOM -->
+                    <!-- LOGO -->
+            </td>
+    
+            <td width="60%" style="margin-left:auto;margin-right:auto;">
+                <br><div align="center"><img src="https://zupimages.net/up/20/19/wl28.png"/> </div><br>
+            </td>
+
+                    <!-- FIN LOGO -->
+        </tr>
+   </table>
+   <table width="95%" style="margin-left:auto;margin-right:auto; background-color:#EDEDED;">
+        <tr>
+            <td colspan="2">
+                <div style="vertical-align:center; font-size:14px; Arial Narrow; color: #ffbb5f; bold; width:600px; height: 25px; text-align:center; background-color:#6C1B2D; margin-left:auto;margin-right:auto; border-top-right-radius: 20px; border-top-left-radius: 20px;">
+                GÉNÉRALITÉS
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td width="50%"><!-- GÉNÉRALITÉS -->
+                <table>
+                    <tr> 
+                    <td> <!-- AGE -->
+                        Âge :
+                    </td> 
+                    <td>
+                        <INPUT type="number" name="attr_AGE" min="0" max="666" title="Saisissez l'âge du personnage" placeholder="Saisissez l'âge du personnage" value="11"></INPUT>
+                        </INPUT> Pts de Destin: <INPUT type="number" name="attr_Destin" title="Points restants" value="1"></INPUT> / <INPUT type="number" name="attr_DestinTot" title="Points totaux" value="1"></INPUT>
+                    </td><!-- FIN AGE -->
+                    </tr>
+                    <tr>
+                 <!-- SANG -->
+                    <td>Sang : 
+                    </td>
+                    <td>
+                        <SELECT name="attr_SANG">
+                        <OPTION selected>Sang pur (ou sorcier depuis plus de 3 générations)</OPTION>
+                        <OPTION>Sang mêlé</OPTION>
+                        <OPTION>Né Moldu (ou élevé par des moldus)</OPTION>
+                    </SELECT>
+                    </td>
+                 <!-- FIN SANG -->
+                </tr>
+                <tr>
+                 <!-- MAISON -->
+                <td>Maison :
+                </td> 
+                    <td>
+                        <SELECT name="attr_MAISON" style="width:120px;">
+                        <OPTION selected>Serdaigle</OPTION>
+                        <OPTION>Serpentard</OPTION>
+                        <OPTION>Poufsouffle</OPTION>
+                        <OPTION>Gryffondor</OPTION>
+                    </SELECT>
+                    </td>
+                 <!-- FIN MAISON -->
+                 </tr>
+                 <tr>
+                     <td>
+                         Patronus: 
+                     </td>
+                     <td>
+                         <INPUT type="text" name="attr_patronus" title="Épouvantard" placeholder="Aigle, loup, chat..." style="width:150px;">
+                    </td>
+                    </tr>
+        </table>
+                    </td>
+            <td width="50%">
+<table>
+                <!-- METIER -->
+                <tr>
+                    <td>
+                    Métier:
+                    </td> 
+                    <td>
+                        <input type="text" name="attr_Metier" style="width:150px;"title="Metier" placeholder="Médicomage, Auror... "> EXP: <INPUT type="number" name="attr_XP" title="XP totale" value="200"></INPUT> / <INPUT type="number" name="attr_XPNU" title="XP non utilisée" value="0"></INPUT>
+                    </td> 
+                   </tr> 
+                
+                <!-- FIN METIER -->
+                
+                <!-- BAGUETTE -->
+                <tr>
+                <td>
+                    Baguette: 
+                </td>
+                <td>
+                    <input type="text" name="attr_Bois" style="width:150px;"title="Bois" placeholder="Bois">
+                    <input type="text" name="attr_Coeur" style="width:150px;" title="Coeur" placeholder="Coeur">
+                </td>
+                </tr>
+                <!-- FIN BAGUETTE -->
+            <tr>
+                 <td>
+                Objectif :
+                </td>
+                <td> 
+                <INPUT type="text" name="attr_OBJECTIF" title="Résumé de son objectif" placeholder="Résumé de son objectif" style="width:304px;"></INPUT> 
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        Épouvantard: 
+                        </td>
+                        <td>
+                            <INPUT type="text" name="attr_epouvantard" title="Épouvantard" placeholder="Araignée géante, détraqueur..." style="width:304px;"></INPUT>
+                        </td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan=2 > <div style="vertical-align:center; font-size:14px; Arial Narrow; color: #000000; bold; width:450px; height: 25px; text-align:center; background-color:#919191; margin-left:auto; margin-right:auto; border-radius: 10px;">
+                Etat:
+                <INPUT type="radio" name="attr_FATIGUE" value="0" checked> Normal</INPUT>
+                <INPUT type="radio" name="attr_FATIGUE" value="1"> Blessé léger</INPUT>
+                <INPUT type="radio" name="attr_FATIGUE" value="2"> Blessé grave</INPUT>
+                <INPUT type="radio" name="attr_FATIGUE" value="3"> Évanoui</INPUT>
+                <INPUT type="radio" name="attr_FATIGUE" value="4"> Mort</INPUT>
+            </div> <br>
+            </td>
+        </tr>
+        
+    </table>
+    
+                             <!-- FIN GÉNÉRALITÉS -->
+                             
+<table width="95%" style="margin-left:auto;margin-right:auto; background-color:#EDEDED;">
+    <tr>
+        <td style="width:40%" align="center">
+<div><!--STATS-->
+<div align="center" style="vertical-align:center; font-size:14px; Arial Narrow; color: #ffbb5f; bold; width:270px; height: 25px; text-align:center; background-color:#6C1B2D; margin-left:auto;margin-right:auto; border-top-right-radius: 20px; border-top-left-radius: 20px;">
+                STATISTIQUES
+                </div>
+        </td>
+        <td style="width:60%">
+            
+<div style="vertical-align:top; font-size:14px; Arial Narrow; color: #ffbb5f; bold; width:460px; height: 25px; text-align:center; background-color:#6C1B2D; margin-left:auto;margin-right:auto; border-top-right-radius: 20px; border-top-left-radius: 20px;">
+    MATIÈRES OPTIONNELLES
+            </div>
+            </td>
+            </tr>
+            <tr><td align="center" style="vertical-align:center;">
+                <table>
+<tr> <!-- ENDURANCE -->
+	<td>Endurance :</td> <td><INPUT type="number" name="attr_ENDU" title="Endurance du personnage" value="10" min="0" max="20"></INPUT></td>
+	<td><BUTTON type="roll" name="JetEndu" value="Jet d'Endurance [[1d20]] sur [[@{ENDU}+?{Bonus|0}[Bonus/Malus])]]" title="Jet d'endurance" /></td>
+ </tr><!-- FIN ENDURANCE -->
+<tr> <!-- AGILITE -->
+	<td>Agilité :</td><td> <INPUT type="number" name="attr_AGI" title="Agilité du personnage" value="10" min="0" max="20"></INPUT></td>
+	<td><BUTTON type="roll" name="JetAgi" value="Jet d'Agilité [[1d20]] sur [[@{AGI}+?{Bonus|0}[Bonus/Malus])]]" title="Jet d'agilité" /></td>
+ </tr><!-- FIN AGILITE -->
+<tr> <!-- DISCRETION -->
+	<td>Discrétion :</td><td> <INPUT type="number" name="attr_DISC" title="Discrétion du personnage" value="10" min="0" max="20"></INPUT></td>
+	<td><BUTTON type="roll" name="JetDisc" value="Jet de Discrétion [[1d20]] sur [[@{DISC}+?{Bonus|0}[Bonus/Malus])]]" title="Jet de discrétion" /></td>
+ </tr><!-- FIN DISCRETION -->
+<tr> <!-- PERCEPTION -->
+	<td>Perception :</td><td> <INPUT type="number" name="attr_PERC" title="Perception du personnage" value="10" min="0" max="20"></INPUT></td>
+	<td><BUTTON type="roll" name="JetPerc" value="Jet de Perception [[1d20]] sur [[@{PERC}+?{Bonus|0}[Bonus/Malus])]]" title="Jet de perception" /></td>
+ </tr><!-- FIN PERCEPTION -->
+<tr> <!-- PERSUASION -->
+	<td>Persuasion :</td><td> <INPUT type="number" name="attr_PERS" title="Persuasion du personnage" value="10" min="0" max="20"></INPUT></td>
+	<td><BUTTON type="roll" name="JetPers" value="Jet de Persuasion [[1d20]] sur [[@{PERS}+?{Bonus|0}[Bonus/Malus])]]" title="Jet de persuasion" /></td>
+ </tr><!-- FIN PERSUASION -->
+<tr> <!-- ASTUCE -->
+	<td>Astuce :</td><td> <INPUT type="number" name="attr_ASTU" title="Astuce du personnage" value="10" min="0" max="20"></INPUT></td>
+	<td><BUTTON type="roll" name="JetAstu" value="Jet d'Astuce [[1d20]] sur [[@{ASTU}+?{Bonus|0}[Bonus/Malus])]]" title="Jet d'astuce" /></td>
+ </tr><!-- FIN ASTUCE -->
+<tr> <!-- VOLONTE -->
+	<td><div>Volonté :</div><br></td><td> <div><INPUT type="number" name="attr_VOLO" title="Volonté du personnage" value="10" min="0" max="20"></INPUT></div><br></td>
+	<td><div><BUTTON type="roll" name="JetVolo" value="Jet de Volonté [[1d20]] sur [[@{VOLO}+?{Bonus|0}[Bonus/Malus])]]" title="Jet de volonté" /></div><br></td>
+ <!-- FIN VOLONTE -->
+</tr>
+</table>
+
+</td>
+                <!--FIN DES STATS-->
+                
+        
+        <td align="center" style="vertical-align:center;">
+            <fieldset class="repeating_matopt">
+      <div class="grid section-body" style="background-color:#C7C7C7; border-radius:10px; border: solid 1px #C9C9C9;">
+        
+        
+          <input data-i18n-title="title-matopt-used" name="attr_matopt1-name" title="Nom de la matière optionnelle" placeholder="Nom de la matière optionnelle" type="text" style="width:200px"/>
+        
+        
+          
+        <select data-i18n-title="title-matiere-explanation" name="attr_attack-matiere2" title="Statistisque sur laquelle est basée la matière" style="width:100px">
+          <option data-i18n="Stats" value="[[-1]]">Statistique</option>
+          <optgroup label="Choisissez:">Statistique
+            <option data-i18n="Endurance" value="[[@{ENDU}]]" selectedAcc="selectedAcc">Endurance</option>
+            <option data-i18n="Agilité" value="[[@{AGI}]]" selectedAcc="selectedAcc">Agilité</option>
+            <option data-i18n="Discrétion" value="[[@{DISC}]]" selectedAcc="selectedAcc">Discrétion</option>
+            <option data-i18n="Persuasion" value="[[@{PERS}]]" selectedAcc="selectedAcc">Persuasion</option>
+            <option data-i18n="Perception" value="[[@{PERC}]]" selectedAcc="selectedAcc">Perception</option>
+            <option data-i18n="Astuce" value="[[@{ASTU}]]" selectedAcc="selectedAcc">Astuce</option>
+            <option data-i18n="Volonté" value="[[@{VOLO}]]" selectedAcc="selectedAcc">Volonté</option>
+          </optgroup>
+        </select>
+        
+          <select data-i18n-title="Niveau" name="attr_Niv-Matopt1" title="Niveau de la matière optionnelle" style="width:40px">
+            <optgroup label="Niv.">Niv.
+              <option value="0" >0</option>
+              <option value="20" >1</option>
+              <option value="40" >2</option>
+              <option value="60" >3</option>
+              
+            </optgroup>
+          </select>
+          <INPUT type="number" name="attr_VALMATOPT1" value="floor((@{attack-matiere2}+@{Niv-Matopt1}))" disabled />
+        <button data-i18n-title="title-use-smatopt" name="roll_matopt" title="Matière Optionnelle" type="roll" value="@{character_name} fait un jet de @{matopt1-name}: [[1d100]] sur [[(@{VALMATOPT1})+(?{Bonus|0}[Bonus/Malus])]]"></button>
+      <br>
+    </fieldset>
+           
+            
+        </td>
+       
+    </tr>
+    <tr>
+        <TD>
+            <div style="vertical-align:center; font-size:14px; Arial Narrow; color: #ffbb5f; bold; width:270px; height: 25px; text-align:center; background-color:#6C1B2D; margin-left:auto;margin-right:auto; border-top-right-radius: 20px; border-top-left-radius: 20px;">
+                MATIÈRES
+                </div></TD>
+                <td>
+                    <div  style="vertical-align:top; font-size:14px; Arial Narrow; color: #ffbb5f; bold; width:460px; height: 25px; text-align:center; background-color:#6C1B2D; margin-left:auto;margin-right:auto; border-top-right-radius: 20px; border-top-left-radius: 20px;">
+           ATOUTS ET FARDEAUX
+            </div>
+                </td></tr><tr>
+            <!-- ASTRONOMIE -->
+            <td rowspan=3>
+            <div style="background-color:#C7C7C7; border-radius: 10px; border:1px solid #FFF; width:300px;">
+            Astronomie:<br> 
+            Niv:
+                <INPUT type="radio" name="attr_VALMASTRO" value="0" checked> 0</INPUT>
+                <INPUT type="radio" name="attr_VALMASTRO" value="20"> 1</INPUT>
+                <INPUT type="radio" name="attr_VALMASTRO" value="40"> 2</INPUT>
+                <INPUT type="radio" name="attr_VALMASTRO" value="60"> 3</INPUT>
+        <br>
+            Total : <INPUT type="number" name="attr_VALASTRO" value="floor((@{VALMASTRO}+@{ASTU}))" disabled />
+                <BUTTON type="roll" name="JetASTRO" value="Jet d'Astronomie: [[1d100]] sur [[@{VALASTRO}+(?{Bonus|0}[Bonus/Malus])]]" title="Jet d'Astronomie'" />
+            </div>
+            <!-- FIN ASTRONOMIE -->
+            <!-- BOTANIQUE -->
+            <div style="background-color:#C7C7C7; border-radius: 10px; border:1px solid #FFF; width:300px;">
+            Botanique: <br>
+            Niv:
+                <INPUT type="radio" name="attr_VALMBOTA" value="0" checked> 0</INPUT>
+                <INPUT type="radio" name="attr_VALMBOTA" value="20"> 1</INPUT>
+                <INPUT type="radio" name="attr_VALMBOTA" value="40"> 2</INPUT>
+                <INPUT type="radio" name="attr_VALMBOTA" value="60"> 3</INPUT>
+                <br>
+        Total : <INPUT type="number" name="attr_VALBOTA" value="floor((@{VALMBOTA}+@{ASTU}))" disabled />
+                <BUTTON type="roll" name="JetBOTA" value="Jet de botanique: [[1d100]] sur [[@{VALBOTA}+(?{Bonus|0}[Bonus/Malus])]]" title="Jet de Botanique'" />
+            </div>
+            <!-- FIN BOTANIQUE -->
+            <!-- DEFENSE CONTRE LES FORCES DU MAL -->
+            <div style="background-color:#C7C7C7; border-radius: 10px; border:1px solid #FFF; width:300px;">
+            DCFM:<br>
+            Niv:
+                <INPUT type="radio" name="attr_VALMDCFM" value="0" checked> 0</INPUT>
+                <INPUT type="radio" name="attr_VALMDCFM" value="20"> 1</INPUT>
+                <INPUT type="radio" name="attr_VALMDCFM" value="40"> 2</INPUT>
+                <INPUT type="radio" name="attr_VALMDCFM" value="60"> 3</INPUT>
+        Baguette : <INPUT type="number" name="attr_MODDCFM"  value="0" min="-15" max="15"/></INPUT><br>
+        Total : <INPUT type="number" name="attr_VALDFCM" value="floor((@{VALMDCFM}+@{VOLO})+(@{MODDCFM}))" disabled />
+                <BUTTON type="roll" name="JetDCFM" value="Jet de Défense Contre Les Forces du Mal [[1d100]] sur [[@{VALDFCM}+(?{Bonus|0}[Bonus/Malus])]]" title="Jet de DCFM" />
+            </div>
+            <!-- FIN DEFENSE CONTRE LES FORCES DU MAL -->
+            <!-- ENCHANTEMENTS -->
+            <div style="background-color:#C7C7C7; border-radius: 10px; border:1px solid #FFF; width:300px;">
+            Enchantements:<br>
+            Niv:
+                <INPUT type="radio" name="attr_VALMENCH" value="0" checked> 0</INPUT>
+                <INPUT type="radio" name="attr_VALMENCH" value="20"> 1</INPUT>
+                <INPUT type="radio" name="attr_VALMENCH" value="40"> 2</INPUT>
+                <INPUT type="radio" name="attr_VALMENCH" value="60"> 3</INPUT>
+        Baguette : <INPUT type="number" name="attr_MODENCH"  value="0" min="-15" max="15"/></INPUT><br>
+        Total : <INPUT type="number" name="attr_VALENCH" value="floor((@{VALMENCH}+@{VOLO})+(@{MODENCH}))" disabled />
+                <BUTTON type="roll" name="JetENCH" value="Enchantement? Enchantement! [[1d100]] sur [[@{VALENCH}+(?{Bonus|0}[Bonus/Malus])]]" title="Jet d'enchantement" />
+            </div>
+            <!-- FIN ENCHANTEMENTS -->
+            <!-- HISTOIRE DE LA MAGIE -->
+            <div style="background-color:#C7C7C7; border-radius: 10px; border:1px solid #FFF; width:300px;">
+            Histoire de la Magie:<br>
+            Niv:
+                <INPUT type="radio" name="attr_VALMHIST" value="0" checked> 0</INPUT>
+                <INPUT type="radio" name="attr_VALMHIST" value="20"> 1</INPUT>
+                <INPUT type="radio" name="attr_VALMHIST" value="40"> 2</INPUT>
+                <INPUT type="radio" name="attr_VALMHIST" value="60"> 3</INPUT>
+                <br>
+        Total : <INPUT type="number" name="attr_VALHIST" value="floor((@{VALMHIST}+@{ASTU}))" disabled />
+                <BUTTON type="roll" name="JetHIST" value="Jet de Histoire de la Magie: [[1d100]] sur [[@{VALHIST}+(?{Bonus|0}[Bonus/Malus])]]" title="Jet de Histoire de la Magie'" />
+            </div>
+            <!-- FIN HISTOIRE DE LA MAGIE -->
+            <!-- METAMORPHOSE -->
+            <div style="background-color:#C7C7C7; border-radius: 10px; border:1px solid #FFF; width:300px;">
+            Métamorphose:<br>
+            Niv:
+                <INPUT type="radio" name="attr_VALMMETA" value="0" checked> 0</INPUT>
+                <INPUT type="radio" name="attr_VALMMETA" value="20"> 1</INPUT>
+                <INPUT type="radio" name="attr_VALMMETA" value="40"> 2</INPUT>
+                <INPUT type="radio" name="attr_VALMMETA" value="60"> 3</INPUT>
+        Baguette : <INPUT type="number" name="attr_MODMETA"  value="0" min="-15" max="15"/></INPUT><br>
+        Total : <INPUT type="number" name="attr_VALMETA" value="floor((@{VALMMETA}+@{VOLO})+(@{MODMETA}))" disabled />
+                <BUTTON type="roll" name="JetMETA" value="Jet de Métamorphose: [[1d100]] sur [[@{VALMETA}+(?{Bonus|0}[Bonus/Malus])]]" title="Jet de Métamorphose" />
+            </div>
+            <!-- FIN METAMORPHOSE -->
+            <!-- POTIONS -->
+            <div style="background-color:#C7C7C7; border-radius: 10px; border:1px solid #FFF; width:300px;">
+            Potions:<br>
+            Niv:
+                <INPUT type="radio" name="attr_VALMPOT" value="0" checked> 0</INPUT>
+                <INPUT type="radio" name="attr_VALMPOT" value="20"> 1</INPUT>
+                <INPUT type="radio" name="attr_VALMPOT" value="40"> 2</INPUT>
+                <INPUT type="radio" name="attr_VALMPOT" value="60"> 3</INPUT><br>
+        Total : <INPUT type="number" name="attr_VALPOT" value="floor((@{VALMPOT}+@{ASTU}))" disabled />
+                <BUTTON type="roll" name="JetPOT" value="Jet de Potions: [[1d100]] sur [[@{VALPOT}+(?{Bonus|0}[Bonus/Malus])]]" title="Jet de Potions'" />
+            </div>
+            <!-- FIN POTIONS -->
+            <!-- VOL -->
+            <div style="background-color:#C7C7C7; border-radius: 10px; border:1px solid #FFF; width:300px;">
+            Vol:<br>
+            Niv:
+                <INPUT type="radio" name="attr_VALMVOL" value="0" checked> 0</INPUT>
+                <INPUT type="radio" name="attr_VALMVOL" value="20"> 1</INPUT>
+                <INPUT type="radio" name="attr_VALMVOL" value="40"> 2</INPUT>
+                <INPUT type="radio" name="attr_VALMVOL" value="60"> 3</INPUT>
+        Balai : <INPUT type="number" name="attr_MODVOL"  value="0" min="-15" max="15"/></INPUT><br>
+        Total : <INPUT type="number" name="attr_VALVOL" value="floor((@{VALMVOL}+@{ENDU})+(@{MODVOL}))" disabled />
+                <BUTTON type="roll" name="JetVOL" value="Jet de Vol: [[1d100]] sur [[@{VALVOL}+(?{Bonus|0}[Bonus/Malus])]]" title="Jet de Vol" />
+            </div>
+            <!-- FIN VOL -->
+            <!-- MAGIE NOIRE -->
+            <div style="background-color:#C7C7C7; border-radius: 10px; border:1px solid #FFF; width:300px;">
+            Magie Noire:<br>
+            Niv:
+                <INPUT type="radio" name="attr_VALMNOIRE" value="0" checked> 0</INPUT>
+                <INPUT type="radio" name="attr_VALMNOIRE" value="20" disabled> 1</INPUT>
+                <INPUT type="radio" name="attr_VALMNOIRE" value="40" disabled> 2</INPUT>
+                <INPUT type="radio" name="attr_VALMNOIRE" value="60" disabled> 3</INPUT>
+        Baguette : <INPUT type="number" name="attr_MODNOIRE"  value="0" min="-15" max="15"/></INPUT><br>
+        Total : <INPUT type="number" name="attr_VALNOIRE" value="floor((@{VALMNOIRE}+@{VOLO})+(@{MODNOIRE}))" disabled />
+                <BUTTON type="roll" name="JetNOIRE" value="Jet de Magie Noire: [[1d100]] sur [[@{VALNOIRE}+(?{Bonus|0}[Bonus/Malus])]]" title="Jet de Magie Noire" />
+            </div>
+            <!-- FIN MAGIE NOIRE -->
+            
+        </td>
+       <td height="200px" align="center">
+           
+             
+            
+            <div> <!--REPETE ATOUTS FARDEAUX-->
+
+ 	<fieldset class="repeating_AtFar">
+   	<input type="text"  name="attr_AtFar_nom" placeholder="nom de l'atout ou fardeau" title="nom de l'atout ou fardeau" style="width: 150px"/>
+   	<input type="text" name="attr_AtFar_descr" placeholder="description de l'atout ou fardeau" title="desciption de l'atout ou fardeau" style="width: 306px">
+  	
+	</fieldset>
+    
+</div><!--fin de ATOUT FARDEAUX-->
+    
+       </td>
+    </tr>
+    <tr>
+        <td>
+            
+<div style="vertical-align:top; font-size:14px; Arial Narrow; color: #ffbb5f; bold; width:460px; height: 25px; text-align:center; background-color:#6C1B2D; margin-left:auto;margin-right:auto; border-top-right-radius: 20px; border-top-left-radius: 20px;">
+           INVENTAIRE
+            </div>
+        </td>
+</tr>
+<tr>
+    <td align="center">
+        
+        
+            Gallions: <INPUT type="number" name="attr_GAL" title="Gallions" value="0"></INPUT> Mornilles: <INPUT type="number" name="attr_MOR" title="Mornilles" value="0"></INPUT> Noises: <INPUT type="number" name="attr_NOI" title="Noises" value="0"></INPUT><br>
+       <input type="text"  name="attr_matos_nom1" placeholder="nom de l'item" title="nom de l'item"style="width: 150px"/>
+   	<input type="number" name="attr_matos_nb1" value="1"/>
+   	<input type="text" name="attr_matos_descr1" placeholder="description de l'item" title="desciption de l'item"style="width: 267px">
+   	<input type="text"  name="attr_matos_nom2" placeholder="nom de l'item" title="nom de l'item"style="width: 150px"/>
+   	<input type="number" name="attr_matos_nb2" value="1"/>
+   	<input type="text" name="attr_matos_descr2" placeholder="description de l'item" title="desciption de l'item"style="width: 267px">
+   	<input type="text"  name="attr_matos_nom3" placeholder="nom de l'item" title="nom de l'item"style="width: 150px"/>
+   	<input type="number" name="attr_matos_nb3" value="1"/>
+   	<input type="text" name="attr_matos_descr3" placeholder="description de l'item" title="desciption de l'item"style="width: 267px">
+   	<input type="text"  name="attr_matos_nom4" placeholder="nom de l'item" title="nom de l'item"style="width: 150px"/>
+   	<input type="number" name="attr_matos_nb4" value="1"/>
+   	<input type="text" name="attr_matos_descr4" placeholder="description de l'item" title="desciption de l'item"style="width: 267px">
+   	<input type="text"  name="attr_matos_nom5" placeholder="nom de l'item" title="nom de l'item"style="width: 150px"/>
+   	<input type="number" name="attr_matos_nb5" value="1"/>
+   	<input type="text" name="attr_matos_descr5" placeholder="description de l'item" title="desciption de l'item"style="width: 267px">
+   	<input type="text"  name="attr_matos_nom6" placeholder="nom de l'item" title="nom de l'item"style="width: 150px"/>
+   	<input type="number" name="attr_matos_nb6" value="1"/>
+   	<input type="text" name="attr_matos_descr6" placeholder="description de l'item" title="desciption de l'item"style="width: 267px">
+   	<input type="text"  name="attr_matos_nom7" placeholder="nom de l'item" title="nom de l'item"style="width: 150px"/>
+   	<input type="number" name="attr_matos_nb7" value="1"/>
+   	<input type="text" name="attr_matos_descr7" placeholder="description de l'item" title="desciption de l'item"style="width: 267px">
+   	<input type="text"  name="attr_matos_nom8" placeholder="nom de l'item" title="nom de l'item"style="width: 150px"/>
+   	<input type="number" name="attr_matos_nb8" value="1"/>
+   	<input type="text" name="attr_matos_descr8" placeholder="description de l'item" title="desciption de l'item"style="width: 267px">
+   	<input type="text"  name="attr_matos_nom9" placeholder="nom de l'item" title="nom de l'item"style="width: 150px"/>
+   	<input type="number" name="attr_matos_nb9" value="1"/>
+   	<input type="text" name="attr_matos_descr9" placeholder="description de l'item" title="desciption de l'item"style="width: 267px">
+   	<input type="text"  name="attr_matos_nom10" placeholder="nom de l'item" title="nom de l'item"style="width: 150px"/>
+   	<input type="number" name="attr_matos_nb10" value="1"/>
+   	<input type="text" name="attr_matos_descr10" placeholder="description de l'item" title="desciption de l'item"style="width: 267px">
+   	<input type="text"  name="attr_matos_nom11" placeholder="nom de l'item" title="nom de l'item"style="width: 150px"/>
+   	<input type="number" name="attr_matos_nb11" value="1"/>
+   	<input type="text" name="attr_matos_descr11" placeholder="description de l'item" title="desciption de l'item"style="width: 267px">
+   	<input type="text"  name="attr_matos_nom12" placeholder="nom de l'item" title="nom de l'item"style="width: 150px"/>
+   	<input type="number" name="attr_matos_nb12" value="1"/>
+   	<input type="text" name="attr_matos_descr12" placeholder="description de l'item" title="desciption de l'item"style="width: 267px">
+   	
+   		
+
+   	
+       
+       <div> <!--matériel-->
+
+ 	<fieldset class="repeating_matos">
+   	<input type="text"  name="attr_matos_nom01" placeholder="nom de l'item" title="nom de l'item"style="width: 150px"/>
+   	<input type="number" name="attr_matos_nb01" value="1"/>
+   	<input type="text" name="attr_matos_descr01" placeholder="description de l'item" title="desciption de l'item"style="width: 267px">
+  	
+	</fieldset>
+    
+</div><!--fin de matériel-->
+    </td>
+</tr>
+                
+       
+
+</table>
+<table width="95%" style="margin-left:auto;margin-right:auto;">
+    <tr>
+        <td colspan="2">
+
+            <div style="vertical-align:top; font-size:14px; Arial Narrow; color: #ffbb5f; bold; width:600px; height: 25px; text-align:center; background-color:#6C1B2D; margin-left:auto;margin-right:auto; border-top-right-radius: 20px; border-top-left-radius: 20px;">
+                SORTS
+                </div>
+        </td>
+    </tr>
+    <tr>
+        <td style="margin: 5px; width:50%;">
+            <table><tr><td>
+                    
+                <fieldset class="repeating_power">
+      <div class="grid section-body" style="background-color:#C7C7C7; border-radius:10px; border: solid 1px #C9C9C9;">
+        
+        
+          <input data-i18n-title="title-power-used" name="attr_power1-name" title="Nom du sort" placeholder="Nom du Sort" type="text" style="width:100px"/>
+        
+        
+          <input data-i18n="formule" data-i18n-title="title-power-formule" name="attr_power1-formule" placeholder="Formule" title="Alohomora, Expecto Patronum, Avada Kedavra, etc." type="text" style="width:100px"/>
+        
+        <select data-i18n-title="title-matiere-explanation" name="attr_attack-matiere1" title="Matière utilisée pour le sort" style="width:100px">
+          <option data-i18n="Matière" value="[[-1]]">Matière</option>
+          <optgroup label="Choisissez:">Matière
+            <option data-i18n="DCFM" value="[[@{VALDFCM}]]" selectedAcc="selectedAcc">DCFM</option>
+            <option data-i18n="Enchantements" value="[[@{VALENCH}]]" selectedAcc="selectedAcc">Enchantements</option>
+            <option data-i18n="Métamorphose" value="[[@{VALMETA}]]" selectedAcc="selectedAcc">Métamorphose</option>
+            <option data-i18n="Magie Noire" value="[[@{VALNOIRE}]]" selectedAcc="selectedAcc">Magie Noire</option>
+            
+          </optgroup>
+        </select>
+        
+          <select data-i18n-title="difficulty" name="attr_diff-sort1" title="Difficulté du sort" style="width:40px">
+            <optgroup label="Diff.">Diff.
+              <option value="20" >1</option>
+              <option value="10" >2</option>
+              <option value="0" >3</option>
+              <option value="-10" >4</option>
+              <option value="-20" >5</option>
+              <option value="-30" >6</option>
+              
+            </optgroup>
+          </select>
+        <button data-i18n-title="title-use-sattack" name="roll_attack" title="Sort" type="roll" value="@{character_name} lance un sort de @{power1-name}: @{power1-formule}! [[1d100]] sur [[@{attack-matiere1}+(@{diff-sort1})+(?{Bonus|0}[Bonus/Malus])]] Durée: [[@{dedur1}]] @{dur1}"></button>
+      <input type="text" name="attr_Desc_sort1" title="Description du sort" placeholder="Description du sort" style="width:300px">
+    <select data-i18n-title="Dé de Durée" name="attr_dedur1" title="Dé de durée du sort" style="width:35px">
+            <optgroup label="Durée">Dé.
+              <option value="0" >immédiat</option>
+              <option value="d2" >1d2</option>
+              <option value="d3" >1d3</option>
+              <option value="d4" >1d4</option>
+              <option value="d6" >1d6</option>
+              <option value="d8" >1d8</option>
+              <option value="2d4" >2d4</option>
+              <option value="d10" >1d10</option>
+              <option value="d12" >1d12</option>
+              <option value="d20" >1d20</option>
+              
+            </optgroup>
+          </select>
+          <select data-i18n-title="Durée" name="attr_dur1" title="Dé de durée du sort" style="width:35px">
+            <optgroup label="Durée">Durée.
+              <option name="immédiat" >Immédiat</option>
+              <option value="tours" >Tours</option>
+              <option value="minutes" >Minutes</option>
+              <option value="heures" >Heures</option>
+              <option value="jours" >Jours</option>
+              
+              
+            </optgroup>
+          </select>
+          </div><br>
+    </fieldset>
+    </td></tr></table>
+     
+         
+        </td><td style="margin: 5px; width:50%;">
+    <table><tr><td>
+                <fieldset class="repeating_power">
+      <div class="grid section-body" style="background-color:#C7C7C7; border-radius:10px; border: solid 1px #C9C9C9;">
+        
+        
+          <input data-i18n-title="title-power-used" name="attr_power2-name" title="Nom du sort" placeholder="Nom du Sort" type="text" style="width:100px"/>
+        
+        
+          <input data-i18n="formule" data-i18n-title="title-power-formule" name="attr_power2-formule" placeholder="Formule" title="Alohomora, Expecto Patronum, Avada Kedavra, etc." type="text" style="width:100px"/>
+        
+        <select data-i18n-title="title-matiere-explanation" name="attr_attack-matiere2" title="Matière utilisée pour le sort" style="width:100px">
+          <option data-i18n="Matière" value="[[-1]]">Matière</option>
+          <optgroup label="Choisissez:">Matière
+            <option data-i18n="DCFM" value="[[@{VALDFCM}]]" selectedAcc="selectedAcc">DCFM</option>
+            <option data-i18n="Enchantements" value="[[@{VALENCH}]]" selectedAcc="selectedAcc">Enchantements</option>
+            <option data-i18n="Métamorphose" value="[[@{VALMETA}]]" selectedAcc="selectedAcc">Métamorphose</option>
+            <option data-i18n="Magie Noire" value="[[@{VALNOIRE}]]" selectedAcc="selectedAcc">Magie Noire</option>
+          </optgroup>
+        </select>
+        
+          <select data-i18n-title="difficulty" name="attr_diff-sort2" title="Difficulté du sort" style="width:40px">
+            <optgroup label="Diff.">Diff.
+              <option value="20" >1</option>
+              <option value="10" >2</option>
+              <option value="0" >3</option>
+              <option value="-10" >4</option>
+              <option value="-20" >5</option>
+              <option value="-30" >6</option>
+              
+            </optgroup>
+          </select>
+        <button data-i18n-title="title-use-sattack" name="roll_attack" title="Sort" type="roll" value="@{character_name} lance un sort de @{power2-name}: @{power2-formule}! [[1d100]] sur [[@{attack-matiere2}+(@{diff-sort2})+(?{Bonus|0}[Bonus/Malus])]] Durée: [[@{dedur2}]] @{dur2}"></button>
+      <input type="text" name="attr_Desc_sort01" title="Description du sort" placeholder="Description du sort" style="width:300px">
+      <select data-i18n-title="Dé de Durée" name="attr_dedur2" title="Dé de durée du sort" style="width:35px">
+            <optgroup label="Durée">Dé.
+              <option value="0" >immédiat</option>
+              <option value="d2" >1d2</option>
+              <option value="d3" >1d3</option>
+              <option value="d4" >1d4</option>
+              <option value="d6" >1d6</option>
+              <option value="d8" >1d8</option>
+              <option value="2d4" >2d4</option>
+              <option value="d10" >1d10</option>
+              <option value="d12" >1d12</option>
+              <option value="d20" >1d20</option>
+              
+            </optgroup>
+          </select>
+          <select data-i18n-title="Durée" name="attr_dur2" title="Dé de durée du sort" style="width:35px">
+            <optgroup label="Durée">Durée.
+              <option name="immédiat" >Immédiat</option>
+              <option value="tours" >Tours</option>
+              <option value="minutes" >Minutes</option>
+              <option value="heures" >Heures</option>
+              <option value="jours" >Jours</option>
+              
+              
+            </optgroup>
+          </select>
+          </div><br>
+    </fieldset>
+        </td></tr></table>
+
+         </td>
+    </tr>
+</table>
+</body>
